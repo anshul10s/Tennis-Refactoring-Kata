@@ -3,6 +3,13 @@ import static org.junit.Assert.*;
 import java.util.Arrays;
 import java.util.Collection;
 
+import kata.problem.TennisGame;
+import kata.problem.TennisGame1;
+import kata.problem.TennisGame2;
+import kata.problem.TennisGame3;
+
+import oops.anshul.TennisGameSolution;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -92,6 +99,12 @@ public class TennisTest {
     @Test
     public void checkAllScoresTennisGame3() {
         TennisGame3 game = new TennisGame3("player1", "player2");
+        checkAllScores(game);
+    }
+    
+    @Test
+    public void checkAllScoresTennisGame4() {
+        TennisGameSolution game = new TennisGameSolution("player1", "player2");
         checkAllScores(game);
     }
 
